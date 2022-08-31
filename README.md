@@ -15,6 +15,9 @@ The project is about bike share systems for three major cities in the United Sta
 
 ### Files used
 Include the files used
+chicago.csv
+washington.csv
+new_york_city.csv
 
 
 ### Credits
