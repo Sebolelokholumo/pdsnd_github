@@ -212,7 +212,7 @@ def display_data(df):
 
     print('\nGetting 5 rows data...\n')
 
-    #get user input
+    #get the input of the user
     view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n')
     start_loc = 0
     while True:
