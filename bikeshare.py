@@ -200,11 +200,11 @@ def user_stats(df):
 
     if 'Birth Year' in df.columns:
         most_recent_year = df['Birth Year'].max()
-        print('the most recent year is:', most_recent_year)
+        print('the most recent year is:', int(most_recent_year))
 
     if 'Birth Year' in df.columns:
         most_common_year = df['Birth Year'].mode()[0]
-        print('the most common year is:', most_common_year)
+        print('the most common year is:', int(most_common_year))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
