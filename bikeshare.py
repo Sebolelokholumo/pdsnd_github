@@ -181,8 +181,14 @@ def user_stats(df):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
+<<<<<<< HEAD
 
 
+||||||| ccfed74
+    
+=======
+
+>>>>>>> documentation
     #  Display counts of user types
     user_types = df.groupby(['User Type']).count()
     print(user_types)
@@ -196,27 +202,67 @@ def user_stats(df):
 
     if 'Birth Year' in df.columns:
         earliest_birth_year = df['Birth Year'].min()
+<<<<<<< HEAD
         print('the earliest birth year is:', int(earliest_birth_year))
 
+||||||| ccfed74
+        print('the earliest birth year is:', earliest_birth_year)
+        
+=======
+        print('the earliest birth year is:', earliest_birth_year)
+
+>>>>>>> documentation
     if 'Birth Year' in df.columns:
         most_recent_year = df['Birth Year'].max()
+<<<<<<< HEAD
         print('the most recent year is:', int(most_recent_year))
 
+||||||| ccfed74
+        print('the most recent year is:', most_recent_year)
+    
+=======
+        print('the most recent year is:', most_recent_year)
+
+>>>>>>> documentation
     if 'Birth Year' in df.columns:
         most_common_year = df['Birth Year'].mode()[0]
         print('the most common year is:', int(most_common_year))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+<<<<<<< HEAD
 
 def display_data(df):
     """ displays bikeshare data."""
 
     print('\nGetting 5 rows data...\n')
+||||||| ccfed74
+    
+def display_data(df):
+    """ displays bikeshare data."""
+    
+    print('\nGetting 5 rows data...\n') 
+=======
+>>>>>>> documentation
 
+<<<<<<< HEAD
     #get user input
     view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n')
     start_loc = 0
+||||||| ccfed74
+    #get user input
+    view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n') 
+    start_loc = 0 
+=======
+def display_data(df):
+    """ displays  the bikeshare data according to the user preference."""
+
+    print('\nGetting 5 rows data...\n')
+
+    #get the input of the user
+    view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n')
+    start_loc = 0
+>>>>>>> documentation
     while True:
         print(df.iloc[start_loc:start_loc + 5])
         start_loc += 5
