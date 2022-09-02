@@ -196,7 +196,7 @@ def user_stats(df):
 
     if 'Birth Year' in df.columns:
         earliest_birth_year = df['Birth Year'].min()
-        print('the earliest birth year is:', earliest_birth_year)
+        print('the earliest birth year is:', int(earliest_birth_year))
 
     if 'Birth Year' in df.columns:
         most_recent_year = df['Birth Year'].max()
